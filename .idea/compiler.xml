@@ -7,10 +7,30 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="org.wso2.identity.sample.ClaimAdder" />
+        <module name="org.wso2.identity.sample.session.claim" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="identity-inbound-auth-oauth" target="1.7" />
+      <module name="org.wso2.carbon.identity.discovery" target="1.7" />
+      <module name="org.wso2.carbon.identity.oauth" target="1.7" />
+      <module name="org.wso2.carbon.identity.oauth.common" target="1.7" />
+      <module name="org.wso2.carbon.identity.oauth.common.feature" target="1.7" />
+      <module name="org.wso2.carbon.identity.oauth.dcr" target="1.7" />
+      <module name="org.wso2.carbon.identity.oauth.dcr.server.feature" target="1.7" />
+      <module name="org.wso2.carbon.identity.oauth.endpoint" target="1.7" />
+      <module name="org.wso2.carbon.identity.oauth.feature" target="1.7" />
+      <module name="org.wso2.carbon.identity.oauth.scope.endpoint" target="1.7" />
+      <module name="org.wso2.carbon.identity.oauth.server.feature" target="1.7" />
+      <module name="org.wso2.carbon.identity.oauth.stub" target="1.7" />
+      <module name="org.wso2.carbon.identity.oauth.ui" target="1.7" />
+      <module name="org.wso2.carbon.identity.oauth.ui.feature" target="1.7" />
+      <module name="org.wso2.carbon.identity.oauth2.dcr.endpoint" target="1.7" />
+      <module name="org.wso2.carbon.identity.oidc.dcr" target="1.7" />
+      <module name="org.wso2.carbon.identity.oidc.session" target="1.7" />
+      <module name="org.wso2.carbon.identity.webfinger" target="1.7" />
       <module name="org.wso2.identity.sample.ClaimAdder" target="1.7" />
+      <module name="org.wso2.identity.sample.session.claim" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

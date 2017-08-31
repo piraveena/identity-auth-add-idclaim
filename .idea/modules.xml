@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/org.wso2.identity.sample.ClaimAdder.iml" filepath="$PROJECT_DIR$/org.wso2.identity.sample.ClaimAdder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.wso2.identity.sample.session.claim.iml" filepath="$PROJECT_DIR$/org.wso2.identity.sample.session.claim.iml" />
     </modules>
   </component>
 </project>

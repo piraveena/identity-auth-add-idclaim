@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="org.wso2.carbon.identity.oauth2.dcr.endpoint:war exploded">
+    <output-path>$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.dcr.endpoint/target/org.wso2.carbon.identity.oauth2.dcr.endpoint-5.5.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="org.wso2.carbon.identity.oauth2.dcr.endpoint" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.dcr.endpoint/target/org.wso2.carbon.identity.oauth2.dcr.endpoint-5.5.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="org.wso2.carbon.identity.oauth2.dcr.endpoint/web/Web" />
+    </root>
+  </artifact>
+</component>

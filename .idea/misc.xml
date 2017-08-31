@@ -1,13 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="Osmorc" url="file://$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.discovery" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.common" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.dcr" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.stub" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.ui" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oidc.dcr" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oidc.session" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.webfinger" />
     <file type="Osmorc" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.dcr.endpoint" />
+    <file type="web" url="file://$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.endpoint" />
+    <file type="web" url="file://$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.scope.endpoint" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.discovery/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.common/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.dcr.endpoint/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.dcr/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.endpoint/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.scope.endpoint/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.stub/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.ui/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oidc.dcr/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oidc.session/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.webfinger/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/features/org.wso2.carbon.identity.oauth.common.feature/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/features/org.wso2.carbon.identity.oauth.dcr.server.feature/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/features/org.wso2.carbon.identity.oauth.feature/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/features/org.wso2.carbon.identity.oauth.server.feature/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/features/org.wso2.carbon.identity.oauth.ui.feature/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="org.wso2.carbon.identity.oauth.endpoint:war">
+    <output-path>$PROJECT_DIR$/../../Fara ayya/identity-inbound-auth-oauth/components/org.wso2.carbon.identity.oauth.endpoint/target</output-path>
+    <root id="archive" name="org.wso2.carbon.identity.oauth.endpoint-5.5.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="org.wso2.carbon.identity.oauth.endpoint:war exploded" />
+    </root>
+  </artifact>
+</component>

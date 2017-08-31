@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
-    <scr:component enabled="true" immediate="true" name="org.wso2.identity.sample.component">
-        <implementation class="org.wso2.identity.sample.internal.ClaimAdderServiceComponent"/>
-        <property name="service.pid" value="org.wso2.identity.sample.component"/>
-        <reference name="realm.service" interface="org.wso2.carbon.user.core.service.RealmService" cardinality="1..1" policy="dynamic" bind="setRealmService" unbind="unsetRealmService"/>
-        <reference name="registry.service" interface="org.wso2.carbon.registry.core.service.RegistryService" cardinality="1..1" policy="dynamic" bind="setRegistryService" unbind="unsetRegistryService"/>
-    </scr:component>
-</components>

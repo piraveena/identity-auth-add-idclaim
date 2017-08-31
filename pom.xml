@@ -18,7 +18,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.identity.sample</groupId>
-    <artifactId>org.wso2.identity.sample.ClaimAdder</artifactId>
+    <artifactId>org.wso2.identity.sample.session.claim</artifactId>
     <packaging>bundle</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>extended-jit-associator</name>
@@ -37,6 +37,11 @@
         <dependency>
             <groupId>org.wso2.carbon.identity.inbound.auth.oauth2</groupId>
             <artifactId>org.wso2.carbon.identity.oauth</artifactId>
+            <version>${identity.inbound.auth.oauth.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.inbound.auth.oauth2</groupId>
+            <artifactId>org.wso2.carbon.identity.oidc.session</artifactId>
             <version>${identity.inbound.auth.oauth.version}</version>
         </dependency>
     </dependencies>
@@ -84,8 +89,7 @@
                             org.json; version="${json.wso2.version.range}",
 
                             org.osgi.service.component; version="${osgi.service.component.imp.pkg.version.range}",
-
-                            org.wso2.carbon; version="${carbon.kernel.imp.pkg.version.range}",
+                            org.wso2.carbon.utils.multitenancy; version="${carbon.kernel.imp.pkg.version.range}"
                             org.wso2.carbon.context; version="${carbon.kernel.imp.pkg.version.range}",
 
                             org.wso2.carbon.core.util; version="${carbon.kernel.imp.pkg.version.range}",
@@ -107,10 +111,11 @@
                             org.wso2.carbon.user.core.service; version="${carbon.kernel.imp.pkg.version.range}",
                             org.wso2.carbon.user.core.util; version="${carbon.kernel.imp.pkg.version.range}",
                             org.wso2.carbon.user.core.tenant; version="${carbon.kernel.imp.pkg.version.range}",
+                            org.wso2.carbon.identity.oauth2;version="${identity.inbound.auth.oauth.imp.pkg.version.range}"
+                            org.wso2.carbon.identity.oidc.session.*;version="{identity.inbound.auth.oauth.imp.pkg.version.range}",
+                            org.wso2.carbon; version="${carbon.kernel.imp.pkg.version.range}",
 
-                            org.wso2.carbon.utils.multitenancy; version="${carbon.kernel.imp.pkg.version.range}"
-                            org.wso2.carbon.identity.oauth2;
-                            version="${identity.inbound.auth.oauth.imp.pkg.version.range}"
+
                         </Import-Package>
                         <Export-Package>
                             !org.wso2.identity.sample.internal,
@@ -137,7 +142,7 @@
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-scr-plugin</artifactId>
-                    <version>1.7.2</version>
+                    <version>1.9.0</version>
                     <executions>
                         <execution>
                             <id>generate-scr-scrdescriptor</id>
@@ -220,10 +225,11 @@
         </extended-jit-associator.exp.pkg.version>
 
         <!-- Carbon Kernel version -->
-        <carbon.kernel.version>4.4.5</carbon.kernel.version>
+        <carbon.kernel.version>4.4.11</carbon.kernel.version>
         <carbon.kernel.imp.pkg.version.range>[4.4.0, 5.0.0)</carbon.kernel.imp.pkg.version.range>
         <carbon.user.api.imp.pkg.version.range>[1.0.1, 2.0.0)</carbon.user.api.imp.pkg.version.range>
         <carbon.registry.api.imp.pkg.version.range>[1.0.1, 2.0.0)</carbon.registry.api.imp.pkg.version.range>
+        <carbon.utils.multitenancy>[5.3.0,6.0.0)</carbon.utils.multitenancy>
 
         <!-- Carbon Identity Framework version -->
         <carbon.identity.framework.version>5.7.0</carbon.identity.framework.version>
@@ -235,9 +241,11 @@
         <imp.pkg.version.javax.servlet>[2.6.0, 3.0.0)</imp.pkg.version.javax.servlet>
 
         <identity.inbound.auth.oauth.version>5.5.0-SNAPSHOT</identity.inbound.auth.oauth.version>
-        <identity.inbound.auth.oauth.imp.pkg.version.range>[5.3.0,6.0
-            .0)</identity.inbound.auth.oauth.imp.pkg.version.range>
+        <identity.inbound.auth.oauth.imp.pkg.version.range>[5.3.0,6.0.0)</identity.inbound.auth.oauth.imp.pkg.version.range>
 
+        <!--<identity.inbound.auth.oauth.oidc.session.version>5.5-->
+            <!--.0-SNAPSHOT</identity.inbound.auth.oauth.oidc.session.version>-->
+        <!--<identity.inbound.auth.oauth.oidc.session.imp.pkg.version.range>[5.3.0,6.0.0)</identity.inbound.auth.oauth.oidc.session.imp.pkg.version.range>-->
 
         <!-- Commons version-->
         <commons-logging.osgi.version.range>[1.2,2.0)</commons-logging.osgi.version.range>
