@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="org.wso2.identity.sample.internal.ClaimAdderServiceComponent" activate="activate">
+        <implementation class="org.wso2.identity.sample.internal.ClaimAdderServiceComponent"/>
+    </scr:component>
+</components>
