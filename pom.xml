@@ -266,7 +266,7 @@
         <osgi.service.component.imp.pkg.version.range>[1.2.0, 2.0.0)</osgi.service.component.imp.pkg.version.range>
         <imp.pkg.version.javax.servlet>[2.6.0, 3.0.0)</imp.pkg.version.javax.servlet>
 
-        <identity.inbound.auth.oauth.version>5.5.0-SNAPSHOT</identity.inbound.auth.oauth.version>
+        <identity.inbound.auth.oauth.version>5.5.8-SNAPSHOT</identity.inbound.auth.oauth.version>
         <identity.inbound.auth.oauth.imp.pkg.version.range>[5.3.0,6.0.0)</identity.inbound.auth.oauth.imp.pkg.version.range>
 
         <!--<identity.inbound.auth.oauth.oidc.session.version>5.5-->

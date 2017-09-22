@@ -25,7 +25,7 @@ import org.osgi.service.component.annotations.Component;
 import org.wso2.carbon.registry.core.service.RegistryService;
 import org.wso2.carbon.user.core.service.RealmService;
 import org.wso2.identity.sample.ClaimAdderImp;
-import org.wso2.carbon.identity.oauth2.ClaimAdder;
+import org.wso2.carbon.identity.openidconnect.ClaimAdder;
 
 @Component(
         name = "org.wso2.identity.sample.internal.ClaimAdderServiceComponent",
@@ -40,57 +40,21 @@ public class ClaimAdderServiceComponent {
 
     @Activate
     protected void activate(ComponentContext ctxt) {
-        log.info("activated");
 
-        //register UserOperationEventListener implementation
         ClaimAdderImp claimAdderImp = new ClaimAdderImp();
-        ctxt.getBundleContext().registerService(ClaimAdder.class.getName(),claimAdderImp,null);
+        ctxt.getBundleContext().registerService(ClaimAdder.class.getName(), claimAdderImp, null);
 
         if (log.isDebugEnabled()) {
-            log.debug("SCIM ID Remover bundle is activated");
+            log.debug("ClaimAdder bundle is activated");
         }
     }
 
     protected void deactivate(ComponentContext ctxt) {
+
         if (log.isDebugEnabled()) {
-            log.debug("SCIM ID Remover bundle is deactivated");
+            log.debug("ClaimAdder bundle is deactivated");
         }
     }
 
-//    public static RealmService getRealmService() {
-//        return realmService;
-//    }
-//
-//    protected void setRealmService(RealmService realmService) {
-//        if (log.isDebugEnabled()) {
-//            log.debug("Setting the Realm Service");
-//        }
-//        ClaimAdderServiceComponent.realmService = realmService;
-//    }
-//
-//    protected void unsetRealmService(RealmService realmService) {
-//        if (log.isDebugEnabled()) {
-//            log.debug("UnSetting the Realm Service");
-//        }
-//        ClaimAdderServiceComponent.realmService = null;
-//    }
-//
-//    public static RegistryService getRegistryService() {
-//        return registryService;
-//    }
-//
-//    protected void setRegistryService(RegistryService registryService) {
-//        if (log.isDebugEnabled()) {
-//            log.debug("Setting the Registry Service");
-//        }
-//        ClaimAdderServiceComponent.registryService = registryService;
-//    }
-//
-//    protected void unsetRegistryService(RegistryService registryService) {
-//        if (log.isDebugEnabled()) {
-//            log.debug("UnSetting the Registry Service");
-//        }
-//        ClaimAdderServiceComponent.registryService = null;
-//    }
 
 }

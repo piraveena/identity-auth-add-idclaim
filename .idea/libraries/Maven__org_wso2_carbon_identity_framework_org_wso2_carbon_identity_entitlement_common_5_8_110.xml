@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.wso2.carbon.identity.framework:org.wso2.carbon.identity.entitlement.common:5.8.110">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/wso2/carbon/identity/framework/org.wso2.carbon.identity.entitlement.common/5.8.110/org.wso2.carbon.identity.entitlement.common-5.8.110.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/wso2/carbon/identity/framework/org.wso2.carbon.identity.entitlement.common/5.8.110/org.wso2.carbon.identity.entitlement.common-5.8.110-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/wso2/carbon/identity/framework/org.wso2.carbon.identity.entitlement.common/5.8.110/org.wso2.carbon.identity.entitlement.common-5.8.110-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
